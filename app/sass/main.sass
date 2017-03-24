@@ -1,0 +1,195 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+p
+	margin: 0px
+	line-height: normal
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.container-fluid
+	background: url(../img/header-bg.jpg) no-repeat
+	background-size: 100%
+	background-attachment: fixed
+	min-width: 320px
+
+.conteiner-wrap
+	max-width: 1200px
+	margin: 0 auto;
+	padding: 15px
+
+.header
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: flex-end
+	color: $headercolor-font
+	font-size: 1.5em
+	.logo
+		flex-basis: 27%
+	.header__title
+		flex-basis: 46%
+		text-align: center
+	.header__contact
+		flex-basis: 27%
+
+.content-title 
+	color: $color-default
+	width: 59%
+	margin: 150px auto 100px
+	margin-right: 80px
+	position: relative
+	z-index: 999
+	h1
+		font-size: 4em
+		font-weight: 300
+		text-transform: uppercase
+		margin: 0
+	p
+		font-weight: 300
+		font-size: 1.5em
+		text-align: right
+	h3
+		font-size: 2.25em
+		text-transform: uppercase
+		margin: 50px 0 0 90px
+	&:before
+	    position: absolute
+	    width: 491px
+	    height: 351px
+	    background: url(../img/header-ramka.png) no-repeat
+	    background-size: 100% 100%
+	    left: 51px
+	    top: -40px
+	    content: ""
+	    z-index: -2
+
+iframe
+	width: 100%
+
+.fadeIn
+	animation-delay: 1s
+.fieldset
+	color: $color-default
+	border: 0
+	background: url(../img/form-bg.jpg) no-repeat
+	background-size: cover
+	padding: 45px 37px
+	width: 76.5%
+	.form__title
+		font-size: 1.25em
+		margin-bottom: 40px
+		span
+			font-size: 24px
+			font-weight: 600
+			display: block
+			margin-top: 20px
+.in_cont
+	margin-bottom: 32px
+	input
+	    border-color: rgb(146, 130, 130)
+	    border-style: solid
+	    width: 100%
+	    height: 63px
+	    box-sizing: border-box
+	    font-size: 20px
+	    color: #928282
+	    font-weight: 600
+	    padding-left: 33px
+	    background: none
+	    border-width: 2px
+	.btn__form
+	    background-image: -webkit-linear-gradient( 132deg, rgb(243,208,170) 0%, rgb(242,121,92) 100%)
+	    background-image: -ms-linear-gradient( 132deg, rgb(243,208,170) 0%, rgb(242,121,92) 100%)
+	    width: 100%
+	    max-width: 400px
+	    height: 69px
+	    font-size: 24px
+	    color: #332c34
+	    font-weight: bold
+	    cursor: pointer
+	    transition: all 0.3s
+	    display: block
+	    border: 0
+	    margin: 0 auto
+	    text-align: center
+	    text-decoration: none
+	    line-height: 69px
+	    &:hover
+	    	transform: translateY(-5px)
+	    	box-shadow: 0px 0px 20px rgba(255,255,255,0.3)
+
+.footer
+	background: $footerbg
+	width: 100%
+	padding: 50px 0 25px
+	line-height: normal
+	.footer__wrap
+		max-width: 867px
+		margin: 0 auto
+		padding: 0px
+		.icon__mail, .icon__phone
+			display: inline-block
+			background: url(../img/spritesheet.png) 0px 4px
+			width: 26px
+			height: 20px
+		.icon__phone
+			background: url(../img/spritesheet.png) 24px 0px
+
+
+.footer-link
+	nav
+		ul
+			list-style: none
+			display: flex
+			padding-left: 50px
+			margin: 20px 0 0
+			li
+				margin: 0 30px
+				a
+					color: $link__color
+
+@import "media" // Всегда в конце
+
+
+
+

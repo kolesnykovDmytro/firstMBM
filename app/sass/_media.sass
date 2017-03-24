@@ -1,0 +1,120 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1155px)
+		.header 
+			.header__title
+				flex-basis: 33%
+
+		.container-fluid
+			background-position-x: 44%
+			background-size: 172%
+
+		.content-title
+			width: 52%
+			p
+				text-align: left
+			h3
+				margin-left: 0px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.header
+		flex-direction: column
+		align-items: center
+	.video
+		max-width: 60%
+		margin: 0 auto
+
+	.fieldset
+		max-width: 60%
+		margin: 0 auto
+
+	.footer
+		.col-sm-12
+			text-align: center
+
+	.content-title
+		width: 75%
+		border: solid 8px #4f2225
+		text-align: center
+		margin-top: 20px
+		h1
+			font-size: 3em
+		p
+			text-align: center
+			font-size: 1.2em
+		h3
+			margin-top: 10px
+		&:before
+			display: none
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 550px)
+	.container-fluid
+		background: none #101012
+
+	.content-title
+		width: 100%
+
+	.video
+		max-width: 100%
+
+	.fieldset
+		width: 100%
+		max-width: 100%
+	.in_cont 
+		input
+			padding-left: 3px
+	.footer-link 
+		nav
+			ul
+				flex-direction: column
+				padding: 0px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 450px)
+	.col-xs-12
+		padding: 0px
+	.video
+		display: none
+
+	.content-title
+		margin-bottom: 50px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
